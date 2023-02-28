@@ -46,12 +46,12 @@ body {
   background-color: var(--bgColor);
   font-family: "Proxima Nova", sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 10px;
   line-height: 1.25;
 }
 @media screen and (min-width: 768px) {
   body {
-    font-size: 16px;
+    font-size: 10px;
   }
 }
 @media screen and (min-width: 1920px) {
@@ -84,15 +84,18 @@ body {
   font-weight: 700;
   font-size: 24px;
   text-align: center;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .title {
     font-size: 36px;
+    margin-bottom: 40px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1920px) {
   .title {
     font-size: 48px;
+    margin-bottom: 50px;
   }
 }
 
@@ -107,12 +110,18 @@ body {
   display: block;
   content: "";
   position: absolute;
-  width: 20px;
+  width: 10px;
   height: 100%;
   z-index: 2;
   top: 0;
-  left: -5px;
+  left: -2px;
   background-color: var(--accentColor);
+}
+@media screen and (min-width: 1920px) {
+  .title__line::before {
+    width: 20px;
+    left: -5px;
+  }
 }
 
 .btn {
@@ -123,10 +132,20 @@ body {
   cursor: pointer;
   border-radius: 3px;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 12px;
   text-transform: uppercase;
   color: var(--whiteTextColor);
   background-color: var(--accentColor);
+}
+@media screen and (min-width: 768px) {
+  .btn {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .btn {
+    font-size: 18px;
+  }
 }
 
 .categories__btn {
@@ -140,20 +159,22 @@ body {
 
 .section__products {
   padding: 0 15px;
+  margin-bottom: 50px;
 }
 @media screen and (min-width: 768px) {
   .section__products {
     padding: 0 30px;
+    margin-bottom: 70px;
   }
 }
 @media screen and (min-width: 1920px) {
   .section__products {
     padding: 0 51px;
+    margin-bottom: 100px;
   }
 }
 
 .products__list {
-  margin-top: 30px;
   margin-bottom: 44px;
   display: grid;
   justify-content: center;
@@ -164,7 +185,6 @@ body {
   .products__list {
     grid-template-columns: repeat(3, auto);
     gap: 50px;
-    margin-top: 30px;
     margin-bottom: 64px;
   }
 }
@@ -172,7 +192,6 @@ body {
   .products__list {
     grid-template-columns: repeat(6, 1fr);
     gap: 200px;
-    margin-top: 50px;
     margin-bottom: 84px;
   }
 }
@@ -369,4 +388,78 @@ body {
 .cards__mark-sale {
   background-color: var(--secondAccentColor);
   top: 48px;
+}
+
+.section__about {
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 768px) {
+  .section__about {
+    margin-bottom: 70px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .section__about {
+    margin-bottom: 100px;
+  }
+}
+
+.about__wrapper {
+  position: relative;
+}
+
+.about__img {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .about__img {
+    margin-left: auto;
+    width: 80%;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .about__img {
+    width: 1407px;
+  }
+}
+
+.about__description {
+  background-color: var(--bgColor);
+  border-right: 15px solid var(--accentColor);
+  border-radius: 0px 3px 3px 0px;
+}
+@media screen and (max-width: 768px) {
+  .about__description {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about__description {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    padding: 15px 5px 15px 15px;
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .about__description {
+    padding: 50px 30px 50px 50px;
+    width: 790px;
+  }
+}
+
+.description__text:not(:last-child) {
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .description__text:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+.description__text span {
+  color: var(--accentColor);
 }/*# sourceMappingURL=main.css.map */

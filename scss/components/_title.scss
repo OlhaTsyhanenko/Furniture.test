@@ -2,12 +2,15 @@
     font-weight: 700;
     font-size: 24px;
     text-align: center;
+    margin-bottom: 30px;
 
     @media screen and (min-width: $tablet) {
         font-size: 36px;
+        margin-bottom: 40px;
     }
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $desktop) {
         font-size: 48px;
+        margin-bottom: 50px;
     }
 }
 
@@ -21,11 +24,15 @@
         display: block;
         content: '';
         position: absolute;
-        width: 20px;
+        width: 10px;
         height: 100%;
         z-index: 2;
         top: 0;
-        left: -5px;
+        left: -2px;
         background-color: var(--accentColor);
+        @media screen and (min-width: $desktop) {
+            width: 20px;
+            left: -5px;
+        }
     }
 }

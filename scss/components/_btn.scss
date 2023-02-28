@@ -6,10 +6,16 @@
     cursor: pointer;
     border-radius: 3px;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 12px;
     text-transform: uppercase;
     color: var(--whiteTextColor);
     background-color: var(--accentColor);
+    @media screen and (min-width: $tablet) {
+        font-size: 14px;
+    }
+    @media screen and (min-width: $desktop) {
+        font-size: 18px;
+    }
 }
 
 .categories__btn {

@@ -1,0 +1,60 @@
+.section__about {
+    margin-bottom: 50px;
+
+        @media screen and (min-width: $tablet) {
+           margin-bottom: 70px;
+        }
+        @media screen and (min-width: $desktop) {
+            margin-bottom: 100px;
+        }
+}
+
+.about__wrapper {
+    position: relative;
+}
+
+.about__img {
+    width: 100%;
+    @media screen and (min-width: $tablet) {
+        margin-left: auto;
+        width: 80%;
+    }
+    @media screen and (min-width: $desktop) {
+        width: 1407px;
+    }
+}
+
+.about__description {
+    background-color: var(--bgColor);
+    border-right: 15px solid var(--accentColor);
+    border-radius: 0px 3px 3px 0px;
+    @media screen and (max-width: $tablet) {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    }
+    @media screen and (min-width: $tablet) {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        padding: 15px 5px 15px 15px;
+        width: 50%;
+    }
+    @media screen and (min-width: $desktop) {
+        padding: 50px 30px 50px 50px;
+        width: 790px;
+    }
+}
+
+.description__text {
+    &:not(:last-child) {
+    margin-bottom: 10px;
+        @media screen and (min-width: $tablet) {
+            margin-bottom: 15px;
+        }
+    }
+    span {
+        color: var(--accentColor);
+    }
+}

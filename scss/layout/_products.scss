@@ -1,16 +1,18 @@
 .section__products {
     padding: 0 15px;
+    margin-bottom: 50px;
 
     @media screen and (min-width: $tablet) {
         padding: 0 30px;
+        margin-bottom: 70px;
     }
     @media screen and (min-width: $desktop) {
         padding: 0 51px;
+        margin-bottom: 100px;
     }
 }
 
 .products__list {
-    margin-top: 30px;
     margin-bottom: 44px;
     display: grid;
     justify-content: center;
@@ -19,13 +21,11 @@
     @media screen and (min-width: $tablet) {
         grid-template-columns: repeat(3, auto);
         gap: 50px;
-        margin-top: 30px;
         margin-bottom: 64px;
     }
     @media screen and (min-width: $desktop) {
         grid-template-columns: repeat(6, 1fr);
         gap: 200px;
-        margin-top: 50px;
         margin-bottom: 84px;
     }
 }
