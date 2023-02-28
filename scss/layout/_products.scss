@@ -82,8 +82,6 @@
     display: flex;
     flex-direction: column;
 
-    margin-bottom: 30px;
-
     @media screen and (min-width: $tablet) {
         flex-wrap: wrap;
         flex-direction: row;
@@ -105,9 +103,29 @@
         margin-left: 30px;
         margin-top: 50px;
     }
+    transition: transform var(--time) var(--duration),
+                background-color var(--time) var(--duration),
+                color var(--time) var(--duration);
+
+        &:hover,
+        &:focus {
+            transform: translateY(-25px);
+            transition: transform var(--time) var(--duration);
+            .cards__description {
+                background-color: var(--accentColor);
+                transition: background-color var(--time) var(--duration);
+            }
+            .cards__label,
+            .cards__price,
+            .cards__price-old {
+                color: var(--whiteTextColor);
+                transition: color var(--time) var(--duration);
+            }
+        }
 }
 
 .cards__link {
+    display: block;
     color: var(--textColor);
 }
 

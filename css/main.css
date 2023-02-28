@@ -229,7 +229,6 @@ body {
 .cards__list {
   display: flex;
   flex-direction: column;
-  margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .cards__list {
@@ -242,6 +241,7 @@ body {
 
 .cards__item {
   position: relative;
+  transition: transform var(--time) var(--duration), background-color var(--time) var(--duration), color var(--time) var(--duration);
 }
 @media screen and (max-width: 767px) {
   .cards__item:not(:last-child) {
@@ -255,8 +255,25 @@ body {
     margin-top: 50px;
   }
 }
+.cards__item:hover, .cards__item:focus {
+  transform: translateY(-25px);
+  transition: transform var(--time) var(--duration);
+}
+.cards__item:hover .cards__description, .cards__item:focus .cards__description {
+  background-color: var(--accentColor);
+  transition: background-color var(--time) var(--duration);
+}
+.cards__item:hover .cards__label,
+.cards__item:hover .cards__price,
+.cards__item:hover .cards__price-old, .cards__item:focus .cards__label,
+.cards__item:focus .cards__price,
+.cards__item:focus .cards__price-old {
+  color: var(--whiteTextColor);
+  transition: color var(--time) var(--duration);
+}
 
 .cards__link {
+  display: block;
   color: var(--textColor);
 }
 
