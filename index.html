@@ -278,6 +278,61 @@
           </div>
         </div>
       </section>
+      <section class="section section__question">
+        <h2 class="title">
+          <span class="title__line"><span>З</span></span
+          >алишились питання?
+        </h2>
+        <div class="question__wrapper">
+          <picture>
+            <source
+              srcset="
+                ./images/question/question.jpg 1x,
+                ./images/about/about@2x.jpg    2x
+              "
+              type="image/jpeg"
+            />
+            <img
+              src="./images/question/question.jpg"
+              alt="question"
+              class="question__img"
+            />
+          </picture>
+          <div class="question__description">
+            <h3 class="form__title">Замовте консультацію</h3>
+            <form class="question__form">
+              <div class="form__field">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  required
+                  class="form__input"
+                  placeholder="Ім'я"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="form__field">
+                <input
+                  type="tel"
+                  name="tel"
+                  id="tel"
+                  required
+                  class="form__input"
+                  placeholder="Номер телефону"
+                  autocomplete="off"
+                />
+              </div>
+              <button type="submit" class="btn form__btn">Відправити</button>
+            </form>
+            <p class="form__description">
+              Залиште заявку або телефонуйте за номером
+              <span>(099) 111 22 33</span>, і наш менеджер звяжеться з вами для
+              кваліфікованої консультації.
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>

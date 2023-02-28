@@ -1,0 +1,102 @@
+.section__question {
+    margin-bottom: 50px;
+
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 70px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 100px;
+    }
+}
+
+.question__wrapper {
+    position: relative;
+}
+
+.question__img {
+    width: 100%;
+
+    @media screen and (min-width: $tablet) {
+        margin-right: auto;
+        width: 80%;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 1561px;
+    }
+}
+
+.question__description {
+    background-color: var(--bgColor);
+    border-left: 15px solid var(--accentColor);
+    border-radius: 3px 0px 0px 3px;
+
+    @media screen and (max-width: $tablet) {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    @media screen and (min-width: $tablet) {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        padding: 10px 50px 10px 15px;
+        width: 50%;
+    }
+
+    @media screen and (min-width: $desktop) {
+        padding: 50px 50px 50px 30px;
+        width: 528px;
+    }
+}
+
+.form__title {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 30px;
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 20px;
+    }
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 30px;
+        font-size: 36px;
+    }
+}
+
+.form__input {
+    width: 100%;
+    padding: 14px 15px;
+    margin-bottom: 15px;
+    border: 1px solid var(--textColor);
+    border-radius: 3px;
+    background-color: var(--bgColor);
+    color: var(--textColor);
+
+    &,
+    &:active {
+        background-color: var(--bgColor);
+    }
+
+    &::placeholder {
+        color: rgba(30, 46, 54, .6);
+    }
+}
+
+.form__description {
+    margin-top: 30px;
+    span {
+        white-space: nowrap;
+        font-weight: 700;
+    }
+    @media screen and (min-width: $tablet) {
+        margin-top: 10px;
+    }
+    @media screen and (min-width: $desktop) {
+        margin-top: 30px;
+    }
+}
+
+
