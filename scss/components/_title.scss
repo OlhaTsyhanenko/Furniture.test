@@ -1,0 +1,31 @@
+.title {
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 36px;
+    }
+    @media screen and (min-width: $tablet) {
+        font-size: 48px;
+    }
+}
+
+.title__line {
+    position: relative;
+    span {
+            position: relative;
+            z-index: 2;
+        }
+    &::before {
+        display: block;
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 100%;
+        z-index: 2;
+        top: 0;
+        left: -5px;
+        background-color: var(--accentColor);
+    }
+}

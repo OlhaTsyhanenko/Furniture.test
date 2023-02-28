@@ -1,0 +1,27 @@
+:root {
+
+    // Colors
+    --bgColor: #FFFFFF;
+    --textColor: #1E2E36;
+    --whiteTextColor: #ffffff;
+    --accentColor: #44C697;
+    --secondTextColor: #BCBDBB;
+    --secondAccentColor: #FF1B1B;
+
+    // Fonts
+    // font-family: 'Proxima Nova', sans-serif;
+    // font-family: 'Cuprum', sans-serif;
+
+    --time: 250ms;
+    --duration: cubic-bezier(0.4, 0, 0.2, 1);
+
+    //screen
+    --mobile: 320px;
+    --tablet: 768px;
+    --desktop: 1920px;
+}
+
+//screen
+$mobile: 320px;
+$tablet: 768px;
+$desktop: 1920px;

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Furniture.test</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link
+      href="https://fonts.cdnfonts.com/css/proxima-nova-2"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cuprum&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <main>
+      <section class="section section__products">
+        <h2 class="title">
+          <span class="title__line"><span>К</span></span
+          >атегорії товарів
+        </h2>
+        <ul class="list products__list">
+          <li class="products__item">
+            <a href="#" class="link products__link">
+              <svg width="100px" height="100px" class="products__svg">
+                <use href="./images/symbol-defs.svg#icon-living-room"></use>
+              </svg>
+              <p class="products__label">Дивани</p>
+            </a>
+          </li>
+          <li class="products__item">
+            <a href="#" class="link products__link">
+              <svg width="100px" height="100px" class="products__svg">
+                <use href="./images/symbol-defs.svg#icon-bedroom"></use>
+              </svg>
+              <p class="products__label">Ліжка</p>
+            </a>
+          </li>
+          <li class="products__item">
+            <a href="#" class="link products__link">
+              <svg width="100px" height="100px" class="products__svg">
+                <use href="./images/symbol-defs.svg#icon-armchair"></use>
+              </svg>
+              <p class="products__label">Крісла</p>
+            </a>
+          </li>
+          <li class="products__item">
+            <a href="#" class="link products__link">
+              <svg width="100px" height="100px" class="products__svg">
+                <use href="./images/symbol-defs.svg#icon-wardrobe"></use>
+              </svg>
+              <p class="products__label">Комоди</p>
+            </a>
+          </li>
+          <li class="products__item">
+            <a href="#" class="link products__link">
+              <svg width="100px" height="100px" class="products__svg">
+                <use href="./images/symbol-defs.svg#icon-bookcase"></use>
+              </svg>
+              <p class="products__label">Шафи</p>
+            </a>
+          </li>
+          <li class="products__item">
+            <a href="#" class="link products__link">
+              <svg width="100px" height="100px" class="products__svg">
+                <use href="./images/symbol-defs.svg#icon-kitchen"></use>
+              </svg>
+              <p class="products__label">Кухня</p>
+            </a>
+          </li>
+        </ul>
+        <ul class="list cards__list">
+          <li class="cards__item">
+            <a href="#" class="link cards__link">
+              <picture>
+                <source
+                  srcset="
+                    ./images/categories/bed1.jpg    1x,
+                    ./images/categories/bed1@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/categories/bed1.jpg"
+                  alt="bed1"
+                  class="cards__img"
+                />
+              </picture>
+              <div class="cards__description">
+                <p class="cards__label">Ліжко Рамона</p>
+                <p class="cards__price">8 999 грн</p>
+              </div>
+              <p class="cards__mark">новинка</p>
+            </a>
+          </li>
+          <li class="cards__item">
+            <a href="#" class="link cards__link">
+              <picture>
+                <source
+                  srcset="
+                    ./images/categories/bed2.jpg    1x,
+                    ./images/categories/bed2@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/categories/bed2.jpg"
+                  alt="bed2"
+                  class="cards__img"
+                />
+              </picture>
+              <div class="cards__description">
+                <p class="cards__label">Ліжко Честер</p>
+                <div class="cards__price-wrapper">
+                  <p class="cards__price">8 999 грн</p>
+                  <p class="cards__price-old">8 999 грн</p>
+                </div>
+              </div>
+              <p class="cards__mark">новинка</p>
+              <p class="cards__mark cards__mark-sale">акція</p>
+            </a>
+          </li>
+          <li class="cards__item">
+            <a href="#" class="link cards__link">
+              <picture>
+                <source
+                  srcset="
+                    ./images/categories/bed3.jpg    1x,
+                    ./images/categories/bed3@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/categories/bed3.jpg"
+                  alt="bed3"
+                  class="cards__img"
+                />
+              </picture>
+              <div class="cards__description">
+                <p class="cards__label">Ліжко Венеція Люкс</p>
+                <p class="cards__price">8 999 грн</p>
+              </div>
+              <p class="cards__mark">новинка</p>
+            </a>
+          </li>
+          <li class="cards__item">
+            <a href="#" class="link cards__link">
+              <picture>
+                <source
+                  srcset="
+                    ./images/categories/bed4.jpg    1x,
+                    ./images/categories/bed4@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/categories/bed4.jpg"
+                  alt="bed4"
+                  class="cards__img"
+                />
+              </picture>
+              <div class="cards__description">
+                <p class="cards__label">Ліжко Імперія</p>
+                <p class="cards__price">8 999 грн</p>
+              </div>
+              <p class="cards__mark">новинка</p>
+            </a>
+          </li>
+          <li class="cards__item">
+            <a href="#" class="link cards__link">
+              <picture>
+                <source
+                  srcset="
+                    ./images/categories/bed5.jpg    1x,
+                    ./images/categories/bed5@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/categories/bed5.jpg"
+                  alt="bed5"
+                  class="cards__img"
+                />
+              </picture>
+              <div class="cards__description">
+                <p class="cards__label">Ліжко Адель</p>
+                <p class="cards__price">8 999 грн</p>
+              </div>
+              <p class="cards__mark">новинка</p>
+            </a>
+          </li>
+          <li class="cards__item">
+            <a href="#" class="link cards__link">
+              <picture>
+                <source
+                  srcset="
+                    ./images/categories/bed6.jpg    1x,
+                    ./images/categories/bed6@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/categories/bed2.jpg"
+                  alt="bed6"
+                  class="cards__img"
+                />
+              </picture>
+              <div class="cards__description">
+                <p class="cards__label">Ліжко Атлант</p>
+                <div class="cards__price-wrapper">
+                  <p class="cards__price">8 999 грн</p>
+                  <p class="cards__price-old">8 999 грн</p>
+                </div>
+              </div>
+              <p class="cards__mark">новинка</p>
+              <p class="cards__mark cards__mark-sale">акція</p>
+            </a>
+          </li>
+        </ul>
+        <button type="button" class="btn categories__btn">В каталог</button>
+      </section>
+    </main>
+  </body>
+</html>
