@@ -21,9 +21,6 @@ function init() {
            item.style.width = width + 'px';
             item.style.height = 'auto';
         }
-        console.log(window.innerWidth);
-        console.log(width);
-        console.log(item.style.width);
 
     });
     rollSlider();
