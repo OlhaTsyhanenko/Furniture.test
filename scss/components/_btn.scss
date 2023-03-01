@@ -29,3 +29,41 @@
 .form__btn {
     width: 100%;
 }
+
+.slider-prev {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    display: block;
+    padding: 0;
+    margin: 0;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    fill: var(--whiteTextColor);
+
+    @media screen and (max-width: $tablet) {
+        left: 10px;
+    }
+}
+
+.slider-next {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    display: block;
+    padding: 0;
+    margin: 0;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    fill: var(--whiteTextColor);
+    svg {
+            transform: rotate(180deg);
+        }
+    @media screen and (max-width: $tablet) {
+        right: 10px;
+    }
+}
