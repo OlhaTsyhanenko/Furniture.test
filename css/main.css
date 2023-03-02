@@ -238,6 +238,27 @@ body {
   color: var(--textColor);
 }
 
+.socnetworks__title {
+  color: var(--whiteTextColor);
+}
+
+.socnetworks__list {
+  display: flex;
+  align-items: center;
+}
+
+.socnetworks__item:not(:last-child) {
+  margin-right: 5px;
+}
+
+.socnetworks__link .socnetworks__icon {
+  fill: var(--whiteTextColor);
+  transition: fill var(--time) var(--duration);
+}
+.socnetworks__link:hover .socnetworks__icon, .socnetworks__link:focus .socnetworks__icon {
+  fill: var(--accentColor);
+}
+
 .section__benefits {
   padding: 0 15px;
   margin-bottom: 50px;

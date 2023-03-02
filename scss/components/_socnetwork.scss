@@ -1,0 +1,27 @@
+.socnetworks__title {
+    color: var(--whiteTextColor);
+}
+
+.socnetworks__list {
+    display: flex;
+    align-items: center;
+}
+
+.socnetworks__item:not(:last-child) {
+    margin-right: 5px;
+}
+
+.socnetworks__link {
+    .socnetworks__icon {
+    fill: var(--whiteTextColor);
+    transition: fill var(--time) var(--duration);
+    }
+
+    &:hover,
+    &:focus {
+        .socnetworks__icon {
+        fill: var(--accentColor);
+        }
+    }
+
+}
