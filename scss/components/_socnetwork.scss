@@ -15,7 +15,15 @@
     .socnetworks__icon {
     fill: var(--whiteTextColor);
     transition: fill var(--time) var(--duration);
+    @media screen and (min-width: $tablet) {
+        width: 40px;
+        height: 40px;
     }
+    &.black {
+        fill: var(--textColor);
+    }
+    }
+
 
     &:hover,
     &:focus {

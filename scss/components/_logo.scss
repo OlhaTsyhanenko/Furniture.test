@@ -29,6 +29,6 @@
 .logo__svg {
     fill: var(--whiteTextColor);
     &.black {
-        color: var(--textColor);
+        fill: var(--textColor);
     }
 }
