@@ -126,13 +126,13 @@ body {
 
 .btn {
   display: block;
-  padding: 14px 46px;
+  padding: 10px 26px;
   margin: 0;
   border: none;
   cursor: pointer;
   border-radius: 3px;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 10px;
   text-transform: uppercase;
   color: var(--whiteTextColor);
   background-color: var(--accentColor);
@@ -140,6 +140,7 @@ body {
 @media screen and (min-width: 768px) {
   .btn {
     font-size: 14px;
+    padding: 14px 46px;
   }
 }
 @media screen and (min-width: 1920px) {
@@ -148,6 +149,43 @@ body {
   }
 }
 
+.hero__btn {
+  margin: 0 auto;
+}
+
+.hero-prev {
+  display: block;
+  padding: 0;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  margin-right: 8px;
+}
+@media screen and (min-width: 768px) {
+  .hero-prev svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.hero-next {
+  display: block;
+  padding: 0;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+@media screen and (min-width: 768px) {
+  .hero-next svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+.hero-next svg {
+  transform: rotate(180deg);
+}
 .categories__btn {
   margin: 30px auto 0 auto;
 }
@@ -257,6 +295,190 @@ body {
 }
 .socnetworks__link:hover .socnetworks__icon, .socnetworks__link:focus .socnetworks__icon {
   fill: var(--accentColor);
+}
+
+.section__hero {
+  position: relative;
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 768px) {
+  .section__hero {
+    margin-bottom: 70px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .section__hero {
+    margin-bottom: 100px;
+  }
+}
+
+.hero__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero__inner {
+  position: absolute;
+  top: 0;
+  left: 50px;
+  padding: 10px 30px;
+  background-color: var(--bgColor);
+  border-left: 15px solid var(--accentColor);
+}
+@media screen and (max-width: 768px) {
+  .hero__inner {
+    left: 0px;
+    padding: 10px 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__inner {
+    padding: 30px 90px 20px 90px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .hero__inner {
+    padding: 100px 90px;
+  }
+}
+
+.hero__mark {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  color: var(--textColor);
+  text-align: center;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .hero__mark {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__mark {
+    margin-bottom: 30px;
+    font-size: 64px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .hero__mark {
+    margin-bottom: 50px;
+  }
+}
+
+.hero__label {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--textColor);
+  text-align: center;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .hero__label {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__label {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero__description {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__description {
+    font-size: 18px;
+    color: var(--textColor);
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__description {
+    margin-bottom: 10px;
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__description {
+    margin-bottom: 30px;
+  }
+}
+
+.hero__number {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--textColor);
+  text-align: center;
+}
+.hero__number span {
+  font-size: 18px;
+}
+@media screen and (min-width: 768px) {
+  .hero__number span {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__number span {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 435px) {
+  .hero__number {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__number {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__number {
+    margin-top: 30px;
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .hero__number {
+    margin-top: 50px;
+  }
+}
+
+.switch__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.act svg {
+  fill: var(--whiteTextColor);
+  background-color: var(--textColor);
+  border-radius: 50%;
+}
+
+.hero__slider {
+  width: 165px;
+  overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  .hero__slider {
+    width: 310px;
+  }
+}
+
+.hero__slider-line {
+  display: flex;
+  transition: all ease 1s;
 }
 
 .section__benefits {

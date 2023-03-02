@@ -1,20 +1,65 @@
 .btn {
     display: block;
-    padding: 14px 46px;
+    padding: 10px 26px;
     margin: 0;
     border: none;
     cursor: pointer;
     border-radius: 3px;
     font-weight: 700;
-    font-size: 12px;
+    font-size: 10px;
     text-transform: uppercase;
     color: var(--whiteTextColor);
     background-color: var(--accentColor);
     @media screen and (min-width: $tablet) {
         font-size: 14px;
+        padding: 14px 46px;
     }
     @media screen and (min-width: $desktop) {
         font-size: 18px;
+    }
+}
+
+.hero__btn {
+    margin: 0 auto;
+}
+
+.hero-prev {
+    display: block;
+    padding: 0;
+    margin: 0;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    margin-right: 8px;
+
+    @media screen and (min-width: $tablet) {
+       svg {
+        width: 30px;
+        height: 30px;
+       }
+    }
+}
+
+.hero-next {
+    display: block;
+    padding: 0;
+    margin: 0;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    @media screen and (min-width: $tablet) {
+            svg {
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+    svg {
+        transform: rotate(180deg);
+    }
+
+    @media screen and (max-width: $tablet) {
+
     }
 }
 

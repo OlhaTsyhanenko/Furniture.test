@@ -24,6 +24,73 @@
   </head>
   <body>
     <main>
+      <section class="section section__hero">
+        <picture>
+          <source
+            srcset="./images/hero/hero.jpg 1x, ./images/hero/hero@2x.jpg 2x"
+            type="image/jpeg"
+          />
+          <img src="./images/hero/hero.jpg" alt="hero" class="hero__img" />
+        </picture>
+        <div class="hero__inner">
+          <div class="hero__slider">
+            <div class="hero__slider-line">
+              <div class="hero__cards">
+                <p class="hero__mark">Новинка!</p>
+                <p class="hero__label">Ліжко Ornella</p>
+                <p class="hero__description">
+                  Це новий рівень <br />
+                  комфортного сну
+                </p>
+                <button class="btn hero__btn">Детальніше</button>
+                <p class="hero__number"><span>01</span>/04</p>
+              </div>
+              <div class="hero__cards">
+                <p class="hero__mark">Хіт!</p>
+                <p class="hero__label">Ліжко Ramona</p>
+                <p class="hero__description">
+                  Це новий рівень <br />
+                  комфортного сну
+                </p>
+                <button class="btn hero__btn">Детальніше</button>
+                <p class="hero__number"><span>02</span>/04</p>
+              </div>
+              <div class="hero__cards">
+                <p class="hero__mark">Новинка!</p>
+                <p class="hero__label">Ліжко Adel</p>
+                <p class="hero__description">
+                  Це новий рівень <br />
+                  комфортного сну
+                </p>
+                <button class="btn hero__btn">Детальніше</button>
+                <p class="hero__number"><span>03</span>/04</p>
+              </div>
+              <div class="hero__cards">
+                <p class="hero__mark">Хіт!</p>
+                <p class="hero__label">Ліжко Chester</p>
+                <p class="hero__description">
+                  Це новий рівень <br />
+                  комфортного сну
+                </p>
+                <button class="btn hero__btn">Детальніше</button>
+                <p class="hero__number"><span>04</span>/04</p>
+              </div>
+            </div>
+          </div>
+          <div class="switch__wrapper">
+            <button type="button" class="hero-prev">
+              <svg width="20px" height="20px">
+                <use href="./images/symbol-defs.svg#icon-chevron"></use>
+              </svg>
+            </button>
+            <button type="button" class="hero-next">
+              <svg width="20px" height="20px">
+                <use href="./images/symbol-defs.svg#icon-chevron"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
       <section class="section section__benefits">
         <h2 class="title">
           <span class="title__line"><span>Н</span></span
@@ -571,5 +638,6 @@
     </footer>
   </body>
 
+  <script src="./js/hero-slider.js"></script>
   <script src="./js/slider.js"></script>
 </html>
