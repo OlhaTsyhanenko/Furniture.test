@@ -20,11 +20,23 @@
 }
 
 .header__btn {
-    margin-left: auto;
+    @media screen and (max-width: 1399px) {
+            display: none;
+        }
+    // margin-left: auto;
 }
 
 .hero__btn {
     margin: 0 auto;
+}
+
+.menu-open {
+    background-color: transparent;
+    margin-left: auto;
+
+    @media screen and (min-width:$desktop) {
+        display: none;
+    }
 }
 
 .hero-prev {

@@ -4,6 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Furniture.test" />
+    <meta
+      property="og:url"
+      content="https://olhatsyhanenko.github.io/Furniture.test/"
+    />
+    <meta property="og:locale" content="en" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:title" content="Furniture.test" />
+    <meta property="og:description" content="Furniture.test is test work" />
+
+    <meta property="og:image" content="images/screen.jpg" />
+    <meta property="og:image:width" content="1920" />
+    <meta property="og:image:height" content="630" />
     <title>Furniture.test</title>
 
     <link
@@ -144,19 +158,21 @@
             </a>
           </li>
         </ul>
-        <div class="logo__wrapper">
-          <svg width="125px" height="75px" class="logo__svg black">
+        <div class="logo__wrapper black">
+          <svg width="100px" height="50px" class="logo__svg black">
             <use href="./images/symbol-defs.svg#icon-logo"></use>
           </svg>
           <p class="logo__title black"><span>F</span>urniture.test</p>
         </div>
-        <div class="header__basket">
-          <svg width="30px" height="30px">
-            <use href="./images/symbol-defs.svg#icon-shopping-cart"></use>
-          </svg>
-          <span>Кошик</span>
+        <div class="btn__wrapper">
+          <div class="header__basket">
+            <svg width="30px" height="30px">
+              <use href="./images/symbol-defs.svg#icon-shopping-cart"></use>
+            </svg>
+            <span>Кошик</span>
+          </div>
+          <button class="btn header__btn">Замовити дзвінок</button>
         </div>
-        <button class="btn header__btn">Замовити дзвінок</button>
       </section>
     </header>
     <main>
@@ -773,7 +789,6 @@
       </div>
     </footer>
   </body>
-
   <script src="./js/hero-slider.js"></script>
   <script src="./js/slider.js"></script>
 </html>

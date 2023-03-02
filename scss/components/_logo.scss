@@ -1,6 +1,12 @@
 .logo__wrapper {
     display: flex;
     align-items: center;
+
+    &.black {
+        @media screen and (max-width: 1400px) {
+            margin: 0 auto;
+        }
+    }
 }
 
 .logo__title {
@@ -23,6 +29,12 @@
 
     &.black {
         color: var(--textColor);
+        @media screen and (min-width: 1400px) {
+            span {
+               width: 125px;
+                height: 75px;
+            }
+        }
     }
 }
 
