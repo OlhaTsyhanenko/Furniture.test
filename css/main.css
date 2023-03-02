@@ -809,7 +809,8 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .footer {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
   }
 }
 
@@ -958,6 +959,7 @@ body {
 @media screen and (min-width: 1200px) {
   .footer__img {
     width: 100%;
+    height: 100%;
     object-fit: cover;
   }
 }
