@@ -122,7 +122,6 @@
         display: flex;
         align-items: center;
         margin-right: 30px;
-        // margin-left: 100px;
 
         span {
             font-weight: 700;
@@ -131,8 +130,4 @@
             margin-left: 5px;
         }
     }
-    @media screen and (min-width: $desktop) {
-        // margin-left: 319px;
-    }
-
 }
